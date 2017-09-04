@@ -1,0 +1,43 @@
+<!-- 这个页面由于会通过Ajax加载，所以我们不需要实现完整的布局，只需添加.navbar和.page即可-->
+<!-- 顶部导航栏 -->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left">
+			<a href="#" class="back link">
+				<i class="icon icon-back"></i>
+				<span>返回</span>
+			</a>
+		</div>
+		<div class="center sliding">测试页面</div>
+		<div class="right">
+
+		</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="demo" id="demo" class="page">
+
+		<div class="page-content">
+			<div class="content-block">
+				<p class="buttons-row theme-orange">
+					<button class="button" id="demoButton1">创建库</button>
+					<button href="javascript:;" class="button active" id="demoButton2">插入数据</button>
+					<button href="javascript:;" class="button" id="demoButton3">查询</button>
+				</p>
+				<div id="result" style="width: 100%;height: auto;background: #5D4037;color: #fff;"></div>
+
+				<input type="file" id="my_file" name="my_file[]" multiple="multiple" />
+				<p>
+					<a href="#" class="button" onclick="insertPlansList()">插入计划list数据</a>
+				</p>
+				<p>
+					<a href="#" class="button" onclick="insertHisotry()">插入历史填报数据</a>
+				</p>
+
+				<p>
+					<a href="#" class="button" onclick="createWebview()">Create Webview</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

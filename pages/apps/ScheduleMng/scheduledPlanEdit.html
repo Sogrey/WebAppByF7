@@ -1,0 +1,327 @@
+<!-- 这个页面由于会通过Ajax加载，所以我们不需要实现完整的布局，只需添加.navbar和.page即可-->
+<!-- 顶部导航栏 -->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left">
+			<a href="#" class="back link">
+				<i class="icon icon-back"></i>
+				<span>返回</span>
+			</a>
+		</div>
+		<div class="center sliding">项目名称</div>
+		<div class="right">
+			<a href="#" data-popover=".popover-links-editHistory" class="link open-popover"><i class="icon icon-history"></i></a>
+		</div>
+		<div class="popover popover-links-editHistory submitHistoryList">
+			<div class="popover-angle"></div>
+			<div class="popover-inner">
+				<div class="list-block">
+					<ul>
+						<!--<li class="current">
+							<a href="#">
+								<div><span class="title overflow_ellipsis">青海扎道路工程</span><span>[当前]</span></div>
+								<div>时间：2017-08-12</div>
+								<div><span>完成百分比：40%</span><span class="more">详情</span></div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="overflow_ellipsis">青海扎道路工程</div>
+								<div>时间：2017-08-12</div>
+								<div><span>完成百分比：40%</span><span class="more">详情</span></div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="overflow_ellipsis">青海扎道路工程</div>
+								<div>时间：2017-08-12</div>
+								<div><span>完成百分比：40%</span><span class="more">详情</span></div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="overflow_ellipsis">青海扎道路工程</div>
+								<div>时间：2017-08-12</div>
+								<div><span>完成百分比：40%</span><span class="more">详情</span></div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="overflow_ellipsis">青海扎道路工程</div>
+								<div>时间：2017-08-12</div>
+								<div><span>完成百分比：40%</span><span class="more">详情</span></div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="overflow_ellipsis">青海扎道路工程</div>
+								<div>时间：2017-08-12</div>
+								<div><span>完成百分比：40%</span><span class="more">详情</span></div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="overflow_ellipsis">青海扎道路工程</div>
+								<div>时间：2017-08-12</div>
+								<div><span>完成百分比：40%</span><span class="more">详情</span></div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="overflow_ellipsis">青海扎道路工程</div>
+								<div>时间：2017-08-12</div>
+								<div><span>完成百分比：40%</span><span class="more">详情</span></div>
+							</a>
+						</li>
+						<li class="nomore">
+							
+								<div class="">已加载全部</div>
+								
+						</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<div class="pages navbar-fixed">
+	<div data-page="scheduledPlanEdit" id="scheduledPlanEdit" class="page">
+
+		<div class="page-content">
+			<div class="content-block fullscreenContent">
+				<div id="Bim3dEngine">
+					<!--<img src="./img/ic_bim3dEngineImg.png" />-->
+					<iframe src="http://117.34.109.119:9001/" style="width: 100%;height: 100%;"></iframe>
+				</div>
+				<div class="planedittip">请选择具体构件 </div>
+				<div class="planeditBtns">
+					<a href="#" class="button active open-popup" data-popup=".popup-submit">提报日志</a>
+				</div>
+				<div class="popup popup-submit">
+					<div class="popup-submit-content">
+						<div class="content-block">
+							<div class="list-block">
+								<ul>
+									<!--<li>
+										<div class="item-content">
+											<div class="item-inner">
+												<div class="item-title label">完成百分比</div>
+												<div class="item-input">
+													<input type="text" placeholder="请输入完成百分比">
+												</div>
+											</div>
+										</div>
+									</li>-->
+									<li>
+										<div class="item-content">
+											<div class="item-media"><i class="icon icon-form-settings"></i></div>
+											<div class="item-inner">
+												<div class="item-title label">完成百分比</div>
+												<div class="item-input">
+													<div class="RangeSlider">
+														<input type="range" min="0" max="100" value="0" step="1" style="background-size:0% 100%;">
+														<span>0%</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="item-content">
+											<div class="item-inner">
+												<div class="item-title label">实际开始时间</div>
+												<div class="item-input">
+													<input id="input_startTime" type="date"  placeholder="选择实际开始时间">
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="item-content">
+											<div class="item-inner">
+												<div class="item-title label">实际结束时间</div>
+												<div class="item-input">
+													<input id="input_endTime" type="date" placeholder="选择实际结束时间">
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="item-content">
+											<div class="item-inner">
+												<div class="item-title label">阻工原因</div>
+												<div class="item-input">
+													<input id="input_stopWorkingCase" type="text" placeholder="填写阻工原因">
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="item-content">
+											<div class="item-inner">
+												<div class="item-title label">延期原因</div>
+												<div class="item-input">
+													<input id="input_delayCase" type="text" placeholder="填写延期原因">
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="align-top">
+										<div class="item-content">
+											<div class="item-inner">
+												<div class="item-title label">备注</div>
+												<div class="item-input">
+													<textarea id="txt_Remarks" placeholder="填写备注"></textarea>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="item-content">
+											<div class="item-inner">
+												<div class="item-title label lable_uploadPics">上传图片</div>
+												<div class="item-input">
+													<!--<a id="id_a_selectPics" href="#" class="button button-round">选择照片</a>-->
+													<a class="deleteFile" href="#">删除</a>
+												</div>
+											</div>
+										</div>
+										<div class="fileList filePics filesSelected">
+											<ul>
+												<!--<li>
+													<div>
+														<img src="#" class="picReview" data-url="图片" />
+														<p class="desc">xxcxscwxxcxscwxxcxscwxxcxscw</p>
+														<div class="btnEdit"><i class="ic_edit"></i><i class="ic_delete"></i></div>
+													</div>
+												</li>
+												<li>
+													<div>
+														<img src="#" />
+														<p class="desc">xxcxscwxxcxscwxxcxscwxxcxscw</p>
+														<div class="btnEdit"><i class="ic_edit"></i></div>
+													</div>
+												</li>
+												<li>
+													<div>
+														<img src="#" />
+														<p class="desc">xxcxscwxxcxscwxxcxscwxxcxscw</p>
+														<div class="btnEdit"><i class="ic_edit"></i></div>
+													</div>
+												</li>
+												<li>
+													<div>
+														<img src="#" />
+														<p class="desc">xxcxscwxxcxscwxxcxscwxxcxscw</p>
+														<div class="btnEdit"><i class="ic_edit"></i></div>
+													</div>
+												</li>
+												<li>
+													<div>
+														<img src="#" />
+														<p class="desc">xxcxscwxxcxscwxxcxscwxxcxscw</p>
+														<div class="btnEdit"><i class="ic_edit"></i></div>
+													</div>
+												</li>
+												<li>
+													<div>
+														<img src="#" />
+														<p class="desc">xxcxscwxxcxscwxxcxscwxxcxscw</p>
+														<div class="btnEdit"><i class="ic_edit"></i></div>
+													</div>
+												</li>-->
+												<li>
+													<div class="addMediaFile">
+														<img src="./img/icon_addFile.png" />
+														<p class="desc"></p>
+													</div>
+												</li>
+											</ul>
+											<div class="clear"></div>
+										</div>
+									</li>
+									<li>
+										<div class="item-content">
+											<div class="item-inner">
+												<div class="item-title label lable_uploadVideo">上传视频</div>
+												<div class="item-input">
+													<!--<a id="id_a_selectVideos" href="#" class="button button-round">选择视频</a>-->
+													<a class="deleteFile" href="#">删除</a>
+												</div>
+											</div>
+										</div>
+										<div class="fileList fileVideos filesSelected">
+											<ul>
+
+												<!--<li>
+													<div>
+														<img src="#" class="picReview" data-url="视频" />
+														<p class="desc">xxcxscwxxcxscwxxcxscwxxcxscw</p>
+														<div class="btnEdit"><i class="ic_edit"></i><i class="ic_delete"></i></div>
+													</div>
+												</li>
+												<li>
+													<div>
+														<img src="#" />
+														<p class="desc">xxcxscwxxcxscwxxcxscwxxcxscw</p>
+														<div class="btnEdit"><i class="ic_edit"></i></div>
+													</div>
+												</li>
+												<li>
+													<div>
+														<img src="#" />
+														<p class="desc">xxcxscwxxcxscwxxcxscwxxcxscw</p>
+														<div class="btnEdit"><i class="ic_edit"></i></div>
+													</div>
+												</li>-->
+												<li>
+													<div class="addMediaFile">
+														<img src="./img/icon_addFile.png" />
+														<p class="desc"></p>
+													</div>
+												</li>
+											</ul>
+											<div class="clear"></div>
+										</div>
+									</li>
+									<li>
+										<div class="item-content">
+											<div class="item-inner">
+												<div class="item-title label lable_uploadFiles">上传附件</div>
+												<div class="item-input">
+													<!--<input type="file" accept="*/*" multiple placeholder="">-->
+													<a class="deleteFile" href="#">删除</a>
+												</div>
+											</div>
+										</div>
+										<div class="fileOthers filesSelected">
+											<ul>
+												<!--<li>
+													<div>
+														<div class="overflow_ellipsis"><i class="f7-icons">document_text_fill</i><span class="desc" data-url="www">现场勘测报告.doc</span></div>
+														<div class="btnEdit" id="testetst111"><i class="ic_edit"></i><i class="ic_delete"></i></div>
+													</div>
+												</li>-->
+											</ul>
+										</div>
+										<div class="divfileOthers">
+											<!--<input class="inputFileOthers" type="file" accept="*/*" multiple placeholder="" onchange="getFiles(this)">选择文件-->
+												<input type="button" class="button active" value="选择文件" onclick="getFiles(this)">
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="popup-submit-btns">
+						<p class="buttons-row">
+							<a href="#" class="button buttonSave active close-popup">保存</a>
+							<a href="#" class="button close-popup">取消</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

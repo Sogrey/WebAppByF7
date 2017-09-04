@@ -1,0 +1,221 @@
+<!-- 这个页面由于会通过Ajax加载，所以我们不需要实现完整的布局，只需添加.navbar和.page即可-->
+<!-- 顶部导航栏 -->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left">
+			<a href="#" class="back link">
+				<i class="icon icon-back"></i>
+				<span>返回</span>
+			</a>
+		</div>
+		<div class="center sliding">下载管理</div>
+		<div class="right">
+			<!--<a href="#" data-popover=".popover-links-downloader" class="link open-popover"><i class="f7-icons">bars</i></a>
+			-->
+		</div>
+		<div class="popover popover-links-downloader popover_downloader">
+			<div class="popover-angle"></div>
+			<div class="popover-inner">
+				<div class="list-block">
+					<ul>
+						<li>
+							<a data-type="0" href="#" class="list-button item-link close-popover">全部开始</a>
+						</li>
+						<li>
+							<a data-type="1" href="#" class="list-button item-link close-popover">全部暂停</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<div class="pages navbar-fixed">
+	<div data-page="downloader" id="downloader" class="page">
+		<div class="page-content">
+			<div class="content-block">
+				<!--data list-->
+				<div class="list-block downloadList">
+					<ul>
+						<li class="swipeout" data-url="https://qd.myapp.com/myapp/qqteam/AndroidQQ/mobileqq_android.apk">
+							<div class="swipeout-content">
+								<a href="#" class="item-content item-link">
+									<div class="downloaderItem_icon">
+										<img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=335128832,17117477&fm=27&gp=0.jpg" />
+									</div>
+									<div class="downloaderItem_progress">
+										<div class="downloaderItem_title">QQ手机版7.1.8</div>
+										<div class="projectProgress">
+											<!--<progress max="¥2,000.00" value="¥0.00"><span id="objprogress">85</span>%</progress>-->
+											<div class="loader-container" style="width: 0%;">
+											</div>
+
+										</div>
+										<div class="sProgressInfo"><span class="sProgress">0M/37.7M</span><span class="sPre">0%</span></div>
+									</div>
+									<div class="downloaderItem_btns">
+										<button href="#" class="button button-round active btnDownload" style="display: block;">下载</button>
+										<button href="#" class="button button-round active btnPause">暂停</button>
+										<button href="#" class="button button-round active btnResume">继续</button>
+										<button href="#" class="button button-round active btnDone" disabled="disabled">已下载</button>
+									</div>
+								</a>
+							</div>
+							<div class="swipeout-actions-right">
+								<!--<a href="#" class="bg-orange">暂停</a>-->
+								<a href="#" class="bg-red btnDelete">删除</a>
+							</div>
+						</li>
+						<li class="swipeout" data-url="http://gdown.baidu.com/data/wisegame/e54e3c5bc84070c2/weixin_1100.apk">
+							<div class="swipeout-content">
+								<a href="#" class="item-content item-link">
+									<div class="downloaderItem_icon">
+										<img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=3115166131,1644273452&fm=58" />
+									</div>
+									<div class="downloaderItem_progress">
+										<div class="downloaderItem_title">微信6.5.13</div>
+										<div class="projectProgress">
+											<!--<progress max="¥2,000.00" value="¥0.00"><span id="objprogress">85</span>%</progress>-->
+											<div class="loader-container" style="width: 0%;">
+											</div>
+
+										</div>
+										<div class="sProgressInfo"><span class="sProgress">0M/44.2M</span><span class="sPre">0%</span></div>
+									</div>
+									<div class="downloaderItem_btns">
+										<button href="#" class="button button-round active btnDownload" style="display: block;">下载</button>
+										<button href="#" class="button button-round active btnPause">暂停</button>
+										<button href="#" class="button button-round active btnResume">继续</button>
+										<button href="#" class="button button-round active btnDone" disabled="disabled">已下载</button>
+									</div>
+								</a>
+							</div>
+							<div class="swipeout-actions-right">
+								<!--<a href="#" class="bg-orange">暂停</a>-->
+								<a href="#" class="bg-red btnDelete">删除</a>
+							</div>
+						</li>
+						<li class="swipeout" data-url="http://gdown.baidu.com/data/wisegame/7900c3de0b63d006/weibo_3440.apk">
+							<div class="swipeout-content">
+								<a href="#" class="item-content item-link">
+									<div class="downloaderItem_icon">
+										<img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3035946432,936588392&fm=58" />
+									</div>
+									<div class="downloaderItem_progress">
+										<div class="downloaderItem_title">微博7.8.1</div>
+										<div class="projectProgress">
+											<!--<progress max="¥2,000.00" value="¥0.00"><span id="objprogress">85</span>%</progress>-->
+											<div class="loader-container" style="width: 0%;">
+											</div>
+
+										</div>
+										<div class="sProgressInfo"><span class="sProgress">0M/42.6M</span><span class="sPre">0%</span></div>
+									</div>
+									<div class="downloaderItem_btns">
+										<button href="#" class="button button-round active btnDownload" style="display: block;">下载</button>
+										<button href="#" class="button button-round active btnPause">暂停</button>
+										<button href="#" class="button button-round active btnResume">继续</button>
+										<button href="#" class="button button-round active btnDone" disabled="disabled">已下载</button>
+									</div>
+								</a>
+							</div>
+							<div class="swipeout-actions-right">
+								<!--<a href="#" class="bg-orange">暂停</a>-->
+								<a href="#" class="bg-red btnDelete">删除</a>
+							</div>
+						</li>
+						<li class="swipeout" data-url="http://gdown.baidu.com/data/wisegame/3d261540a1f21b40/jingdong_51435.apk">
+							<div class="swipeout-content">
+								<a href="#" class="item-content item-link">
+									<div class="downloaderItem_icon">
+										<img src="https://ss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/wisegame/wh%3D68%2C68/sign=161288e013d8bc3ec65d0eccbaa79026/e61190ef76c6a7efb48895fcf7faaf51f2de66b9.jpg" />
+									</div>
+									<div class="downloaderItem_progress">
+										<div class="downloaderItem_title">京东手机版6.3.0</div>
+										<div class="projectProgress">
+											<!--<progress max="¥2,000.00" value="¥0.00"><span id="objprogress">85</span>%</progress>-->
+											<div class="loader-container" style="width: 0%;">
+											</div>
+
+										</div>
+										<div class="sProgressInfo"><span class="sProgress">0M/72.6M</span><span class="sPre">0%</span></div>
+									</div>
+									<div class="downloaderItem_btns">
+										<button href="#" class="button button-round active btnDownload" style="display: block;">下载</button>
+										<button href="#" class="button button-round active btnPause">暂停</button>
+										<button href="#" class="button button-round active btnResume">继续</button>
+										<button href="#" class="button button-round active btnDone" disabled="disabled">已下载</button>
+									</div>
+								</a>
+							</div>
+							<div class="swipeout-actions-right">
+								<!--<a href="#" class="bg-orange">暂停</a>-->
+								<a href="#" class="bg-red btnDelete">删除</a>
+							</div>
+						</li>
+						<li class="swipeout" data-url="http://gdown.baidu.com/data/wisegame/df8993f8817d8552/dazhongdianping_9301.apk">
+							<div class="swipeout-content">
+								<a href="#" class="item-content item-link">
+									<div class="downloaderItem_icon">
+										<img src="https://ss2.bdstatic.com/-fo3dSag_xI4khGkpoWK1HF6hhy/wisegame/wh%3D68%2C68/sign=0ba4debaf9deb48ffb3ca9d8c8330c11/5882b2b7d0a20cf4c7f3ba047c094b36adaf998e.jpg" />
+									</div>
+									<div class="downloaderItem_progress">
+										<div class="downloaderItem_title">大众点评9.3.4</div>
+										<div class="projectProgress">
+											<!--<progress max="¥2,000.00" value="¥0.00"><span id="objprogress">85</span>%</progress>-->
+											<div class="loader-container" style="width: 0%;">
+											</div>
+
+										</div>
+										<div class="sProgressInfo"><span class="sProgress">0M/41.2M</span><span class="sPre">0%</span></div>
+									</div>
+									<div class="downloaderItem_btns">
+										<button href="#" class="button button-round active btnDownload" style="display: block;">下载</button>
+										<button href="#" class="button button-round active btnPause">暂停</button>
+										<button href="#" class="button button-round active btnResume">继续</button>
+										<button href="#" class="button button-round active btnDone" disabled="disabled">已下载</button>
+									</div>
+								</a>
+							</div>
+							<div class="swipeout-actions-right">
+								<!--<a href="#" class="bg-orange">暂停</a>-->
+								<a href="#" class="bg-red btnDelete">删除</a>
+							</div>
+						</li>
+						<li class="swipeout" data-url="http://gdown.baidu.com/data/wisegame/f6cfee6457e11e6b/kugouyinle_8862.apk">
+							<div class="swipeout-content">
+								<a href="#" class="item-content item-link">
+									<div class="downloaderItem_icon">
+										<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=1178229041,2612056041&fm=58" />
+									</div>
+									<div class="downloaderItem_progress">
+										<div class="downloaderItem_title">酷狗音乐8.8.6</div>
+										<div class="projectProgress">
+											<!--<progress max="¥2,000.00" value="¥0.00"><span id="objprogress">85</span>%</progress>-->
+											<div class="loader-container" style="width: 0%;">
+											</div>
+
+										</div>
+										<div class="sProgressInfo"><span class="sProgress">0M/43.6M</span><span class="sPre">0%</span></div>
+									</div>
+									<div class="downloaderItem_btns">
+										<button href="#" class="button button-round active btnDownload" style="display: block;">下载</button>
+										<button href="#" class="button button-round active btnPause">暂停</button>
+										<button href="#" class="button button-round active btnResume">继续</button>
+										<button href="#" class="button button-round active btnDone" disabled="disabled">已下载</button>
+									</div>
+								</a>
+							</div>
+							<div class="swipeout-actions-right">
+								<!--<a href="#" class="bg-orange">暂停</a>-->
+								<a href="#" class="bg-red btnDelete">删除</a>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

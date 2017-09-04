@@ -1,0 +1,185 @@
+<!-- 这个页面由于会通过Ajax加载，所以我们不需要实现完整的布局，只需添加.navbar和.page即可-->
+<!-- 顶部导航栏 -->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left">
+			<a href="#" class="back link">
+				<i class="icon icon-back"></i>
+				<span>返回</span>
+			</a>
+		</div>
+		<div class="center sliding">进度计划</div>
+		<div class="right">
+			<a href="#" data-popover=".popover-links" class="link open-popover"><i class="icon icon-screen"></i>日计划</a>
+		</div>
+		<div class="popover popover-links">
+			<div class="popover-angle"></div>
+			<div class="popover-inner">
+				<div class="list-block">
+					<ul>
+						<li>
+							<a href="#" class="list-button item-link">月计划</a>
+						</li>
+						<li>
+							<a href="#" class="list-button item-link">周计划</a>
+						</li>
+						<li>
+							<a href="#" class="list-button item-link">旬计划</a>
+						</li>
+						<li class="active">
+							<a href="#" class="list-button item-link">日计划</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<div class="pages navbar-fixed">
+	<div data-page="scheduledPlans" id="scheduledPlans" class="page with-subnavbar">
+
+		<!--FAB-->
+		<div class="speed-dial">
+			<a href="#" class="floating-button"><i class="icon icon-plus"></i><i class="icon icon-close"></i></a>
+			<div class="speed-dial-buttons">
+				<a href="#"><i class="icon icon-plus"></i>
+					<span class="tip">fab 子菜单哦</span>
+				</a>
+				<a href="#"><i class="icon icon-plus"></i>
+					<span class="tip">fab 子菜单哦2</span>
+				</a>
+				<a href="#"><i class="icon icon-plus"></i>
+					<span class="tip">fab 子菜单哦3</span>
+				</a>
+			</div>
+		</div>
+		<!-- ../FAB -->
+		<!--tabs-->
+		<div class="subnavbar tab_tabbar">
+			<div class="buttons-row">
+				<a href="#tab1" class="button">过去15天</a>
+				<a href="#tab2" class="button active">今天(2017/08/18)</a>
+				<a href="#tab3" class="button">未来15天</a>
+			</div>
+		</div>
+		<!--./tabs-->
+		<div class="page-content infinite-scroll pull-to-refresh-content" data-ptr-distance="55">
+			<!-- Default pull to refresh layer-->
+			<div class="pull-to-refresh-layer">
+				<div class="preloader"></div>
+				<div class="pull-to-refresh-arrow"></div>
+			</div>
+			<div class="content-block">
+				<!--data list-->
+				<div class="list-block accordion-list">
+					<ul>
+						<li class="accordion-item">
+							<a href="#" class="item-link item-content">
+								<div class="item-inner">
+									<div class="item-title">Lorem Ipsum</div>
+								</div>
+							</a>
+							<div class="accordion-item-content" style="">
+								<div class="content-block">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum id neque nec commodo. Sed vel justo at turpis laoreet pellentesque quis sed lorem. Integer semper arcu nibh, non mollis arcu tempor vel. Sed pharetra tortor vitae est rhoncus, vel congue dui sollicitudin. Donec eu arcu dignissim felis viverra blandit suscipit eget ipsum.</p>
+								</div>
+							</div>
+						</li>
+						<li class="accordion-item">
+							<a href="#" class="item-link item-content">
+								<div class="item-inner">
+									<div class="item-title">Nested List</div>
+								</div>
+							</a>
+							<div class="accordion-item-content">
+								<div class="list-block childList">
+									<ul>
+										<li>
+											<div class="item-content">
+												<div class="item-inner">
+													<div class="item-title">Item 1</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="item-content">
+												<div class="item-inner">
+													<div class="item-title">Item 2</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="item-content">
+												<div class="item-inner">
+													<div class="item-title">Item 3</div>
+												</div>
+											</div>
+										</li>
+										<li class="accordion-item">
+											<a href="#" class="item-link item-content">
+												<div class="item-inner">
+													<div class="item-title">Nested List</div>
+												</div>
+											</a>
+											<div class="accordion-item-content">
+												<div class="list-block childList">
+													<ul>
+														<li>
+															<div class="item-content">
+																<div class="item-inner">
+																	<div class="item-title">Item 1</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="item-content">
+																<div class="item-inner">
+																	<div class="item-title">Item 2</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="item-content">
+																<div class="item-inner">
+																	<div class="item-title">Item 3</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="item-content">
+																<div class="item-inner">
+																	<div class="item-title">Item 4</div>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="accordion-item">
+							<a href="#" class="item-link item-content">
+								<div class="item-inner">
+									<div class="item-title">Integer semper</div>
+								</div>
+							</a>
+							<div class="accordion-item-content" style="">
+								<div class="content-block">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum id neque nec commodo. Sed vel justo at turpis laoreet pellentesque quis sed lorem. Integer semper arcu nibh, non mollis arcu tempor vel. Sed pharetra tortor vitae est rhoncus, vel congue dui sollicitudin. Donec eu arcu dignissim felis viverra blandit suscipit eget ipsum.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- Preloader -->
+				<div class="infinite-scroll-preloader">
+					<div class="preloader "></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,101 @@
+<!-- 这个页面由于会通过Ajax加载，所以我们不需要实现完整的布局，只需添加.navbar和.page即可-->
+<!-- 顶部导航栏 -->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left">
+			<a href="#" class="back link">
+				<i class="icon icon-back"></i>
+				<span>返回</span>
+			</a>
+		</div>
+		<div class="center sliding">历史填报</div>
+		<div class="right">
+			<!--<a href="#" data-popover=".popover-links" class="link open-popover"><i class="icon icon-screen"></i></a>-->
+		</div>
+	</div>
+
+</div>
+<div class="pages navbar-fixed">
+	<div data-page="sceduledPlanHistory" id="sceduledPlanHistory" class="page">
+
+		<!--FAB-->
+		<div class="speed-dial">
+			<a href="pages/apps/ScheduleMng/scheduledPlanEdit.html" class="floating-button"><i class="icon icon-plus"></i><i class="icon icon-plus"></i></a>
+		</div>
+		<!-- ../FAB -->
+
+		<div class="page-content">
+			<div class="content-block">
+				<!--data list-->
+				<div class="list-block" id="scheduledPlanHistoryList">
+					<ul>
+						<!--<li>
+							<a href="pages/apps/ScheduleMng/scheduledPlanEdit.html?hid=1">
+								<div>
+									<div class="scheduledPlanHistoryListItemTitle overflow_ellipsis">青海扎道路工程项目</div>
+									<div class="scheduledPlanHistoryListItemInfo">
+										<span>提报时间：2017-08-02</span>
+										<span>完成率：20%</span>
+										<span>已同步</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="pages/apps/ScheduleMng/scheduledPlanEdit.html?hid=2">
+								<div>
+									<div class="scheduledPlanHistoryListItemTitle overflow_ellipsis">青海扎道路工程项目青海扎道路工程项目青海扎道路工程项目青海扎道路工程项目青海扎道路工程项目青海扎道路工程项目</div>
+									<div class="scheduledPlanHistoryListItemInfo">
+										<span>时间：2017-08-02</span>
+										<span>完成率：20%</span>
+										<span CLASS="Unsynchronized">未同步</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="pages/apps/ScheduleMng/scheduledPlanEdit.html?hid=3">
+								<div>
+									<div class="scheduledPlanHistoryListItemTitle overflow_ellipsis">青海扎道路工程项目</div>
+									<div class="scheduledPlanHistoryListItemInfo">
+										<span>时间：2017-08-02</span>
+										<span>完成率：20%</span>
+										<span>已同步</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="pages/apps/ScheduleMng/scheduledPlanEdit.html?hid=4">
+								<div>
+									<div class="scheduledPlanHistoryListItemTitle overflow_ellipsis">青海扎道路工程项目</div>
+									<div class="scheduledPlanHistoryListItemInfo">
+										<span>时间：2017-08-02</span>
+										<span>完成率：20%</span>
+										<span>已同步</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="pages/apps/ScheduleMng/scheduledPlanEdit.html?hid=5">
+								<div>
+									<div class="scheduledPlanHistoryListItemTitle overflow_ellipsis">青海扎道路工程项目</div>
+									<div class="scheduledPlanHistoryListItemInfo">
+										<span>时间：2017-08-02</span>
+										<span>完成率：20%</span>
+										<span>已同步</span>
+									</div>
+								</div>
+							</a>
+						</li>-->
+					</ul>
+				</div>
+				<!-- Preloader -->
+				<!--<div class="infinite-scroll-preloader">
+					<div class="preloader "></div>
+				</div>-->
+			</div>
+		</div>
+	</div>
+</div>

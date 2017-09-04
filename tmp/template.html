@@ -1,0 +1,67 @@
+<!-- 这个页面由于会通过Ajax加载，所以我们不需要实现完整的布局，只需添加.navbar和.page即可-->
+<!-- 顶部导航栏 -->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left">
+			<a href="#" class="back link">
+				<i class="icon icon-back"></i>
+				<span>返回</span>
+			</a>
+		</div>
+		<div class="center sliding">进度计划</div>
+		<div class="right">
+			<a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+		</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="scheduledPlans" id="scheduledPlans" class="page">
+		<div class="speed-dial">
+			<a href="#" class="floating-button"><i class="icon icon-plus"></i><i class="icon icon-close"></i></a>
+			<div class="speed-dial-buttons">
+				<a href="#"><i class="icon demo-icon-email"></i>
+					<span class="tip">fab 子菜单哦</span>
+				</a>
+				<a href="#"><i class="icon demo-icon-calendar"></i>
+					<span class="tip">fab 子菜单哦2</span>
+				</a>
+				<a href="#"><i class="icon demo-icon-upload"></i>
+					<span class="tip">fab 子菜单哦3</span>
+				</a>
+			</div>
+		</div>
+		<div class="page-content infinite-scroll pull-to-refresh-content" data-ptr-distance="55">
+			<!-- Default pull to refresh layer-->
+			<div class="pull-to-refresh-layer">
+				<div class="preloader"></div>
+				<div class="pull-to-refresh-arrow"></div>
+			</div>
+			<div class="content-block">
+				<!--data list-->
+				<div class="list-block">
+					<ul>
+						<li class="item-content" ng-repeat="act in activitise1">
+							<a id="act.id" href="javascript:;">
+								<div class="item-inner">
+									<div class="item-title"><span>&#8226;</span>{{act.title}}</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- Preloader -->
+				<div class="infinite-scroll-preloader">
+					<div class="preloader"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+

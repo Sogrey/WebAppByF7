@@ -1,0 +1,54 @@
+{
+	"result": 1,
+	"msg": "noThing",
+	"data": {
+
+		"project_name": "青海扎道路工程",
+		"project_section": "一标段",
+		"organization": "总包方",
+		"userInfo": "总包方负责人",
+		"hasTodo": true,
+		"todos": [
+			{
+				"id": "001",
+				"title": "你有未提交的施工日志1",
+				"isurgent": true
+			}, {
+				"id": "002",
+				"title": "你有未提交的施工日志2",
+				"isurgent": true
+			}, {
+				"id": "003",
+				"title": "你有未提交的施工日志3",
+				"isurgent": true
+			}, {
+				"id": "004",
+				"title": "你有未提交的施工日志4",
+				"isurgent": true
+			}, {
+				"id": "005",
+				"title": "你有未提交的施工日志5",
+				"isurgent": true
+			}
+		],
+		"hasActivity": true,
+		"activitise": [
+			{
+				"id": "001",
+				"title": "关于BIM应用现状与发展趋势，你想知道吗？1"
+			}, {
+				"id": "002",
+				"title": "关于BIM应用现状与发展趋势，你想知道吗？2"
+			}, {
+				"id": "003",
+				"title": "关于BIM应用现状与发展趋势，你想知道吗？3"
+			}, {
+				"id": "004",
+				"title": "关于BIM应用现状与发展趋势，你想知道吗？4"
+			}, {
+				"id": "005",
+				"title": "关于BIM应用现状与发展趋势，你想知道吗？5"
+			}
+		]
+	}
+}

@@ -1,0 +1,57 @@
+{
+  "pages/apps/ScheduleMng/scheduledPlanEdit.html": {
+    "href": "pages/apps/ScheduleMng/scheduledPlanEdit.html",
+    "priority": 1
+  },
+  "pages/apps/ScheduleMng/sceduledPlanHistory.html": {
+    "href": "pages/apps/ScheduleMng/sceduledPlanHistory.html",
+    "priority": 2
+  },
+  "pages/activity/activityContent.html": {
+    "href": "pages/activity/activityContent.html",
+    "priority": 3
+  },
+  "pages/activity/activityList.html": {
+    "href": "pages/activity/activityList.html",
+    "priority": 4
+  },
+  "pages/apps/ScheduleMng/scheduledPlan.html": {
+    "href": "pages/apps/ScheduleMng/scheduledPlan.html",
+    "priority": 5
+  },
+  "pages/apps/ScheduleMng/demo.html": {
+    "href": "pages/apps/ScheduleMng/demo.html",
+    "priority": 6
+  },
+  "pages/settings/changePwd.html": {
+    "href": "pages/settings/changePwd.html",
+    "priority": 7
+  },
+  "pages/settings/downloader.html": {
+    "href": "pages/settings/downloader.html",
+    "priority": 8
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "fonts/Framework7Icons-Regular.eot",
+      "fonts/Framework7Icons-Regular.woff2",
+      "fonts/Framework7Icons-Regular.woff",
+      "fonts/Framework7Icons-Regular.ttf",
+      "img/ic_splash2.jpg",
+      "img/icon_video.png"
+    ],
+    "refer": [
+      "pages/settings/changePwd.html"
+    ],
+    "priority": 1
+  },
+  "splash.html": {
+    "href": "splash.html",
+    "resources": [],
+    "refer": [
+      "splash.html"
+    ],
+    "priority": 0
+  }
+}
